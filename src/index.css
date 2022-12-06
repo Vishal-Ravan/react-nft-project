@@ -1,13 +1,357 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.letter {
+  background-color: #fe6054;
+  padding-bottom: 2rem;
+}
+.warn {
+  background-color: rgba(28, 163, 200, 0.994);
+  border-style: solid;
+  color: #ffffff;
+  border-width: 1px 1px 1px 1px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: none;
+
+  transition: background 0.7s;
+}
+.view-btn{
+  color: white;
+  text-decoration: none;
+}.nav-link:focus, .nav-link:hover{
+  color: #fe6054 !important;
+}
+.primary {
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  color: #fe6054;
+  border-width: 1px 1px 1px 1px;
+  border-color: #fe605491;
+  border-radius: 50px 50px 50px 50px;
+  padding: 12px 30px 12px 30px;
+  font-size: 16px;
+  transition: background 0.7s;
+}
+.primary:hover {
+  background-color: #fe6054;
+  border-style: solid;
+  color: #ffffff;
+  font-weight: 600;
+  border-width: 1px 1px 1px 1px;
+  border-color: #fe605491;
+  border-radius: 50px 50px 50px 50px;
+  padding: 12px 30px 12px 30px;
+  font-size: 18px;
+}
+.secondary {
+  background-color: #fe6054;
+  border-style: solid;
+  color: #ffffff;
+  border-width: 1px 1px 1px 1px;
+  border-color: #fe605491;
+  padding: 12px 30px 12px 30px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.accent {
+  border: 1px solid #818a91;
+  color: #000000;
+  font-size: 16px;
+  border-radius: 0;
+  outline: none;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: none;
+  padding: 15px;
+  border: none;
+  font-weight: 600;
+}
+.danger {
+  background-color: #fe6054;
+  border-style: solid;
+  color: #ffffff;
+  border-width: 1px 1px 1px 1px;
+  border-color: #ffffff91;
+  padding: 7px 30px;
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  padding: 0;
+  margin-bottom: 0 !important;
+}
+h1 {
+  font-size: 2.3529411764706rem;
+  font-weight: 600;
+  color: black;
+}
+h2 {
+  font-size: 2.3529411764706rem;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+h3 {
+  color: #3a3a3a;
+  font-size: 24px;
+}
+h5 {
+  font-size: 16px;
+  color: #fff;
+}
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Navbar {
+  border-bottom: 0.3px solid rgba(91, 90, 90, 0.246);
+}
+
+a.nav-link {
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+input {
+  border: 1px solid #818a91;
+  color: #373a3c;
+  font-size: 19px;
+  outline: none;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: none;
+  padding: 10px;
+  width: 290px;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+/* topbar########################## */
+
+.heading-top {
+  background-color: #fe6054;
+  text-align: center;
+  padding: 7px;
+}
+/* main @@@@@@@@@@@@@@@@@@@ */
+
+.main-top {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.main-top-wrapper {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.main-top-heading-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.h5 {
+  color: rgba(39, 39, 39, 0.708);
+  width: 28%;
+  font-size: 16px;
+  padding: 25px 0;
+}
+
+.main-cards {
+  background-color: #fe6054;
+  padding: 30px 0px;
+}
+.h2 {
+  padding-bottom: 2rem;
+}
+.upcoming {
+  display: flex;
+  justify-content: end;
+}
+
+.row .cards {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.cards:hover {
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+.main-heading-buttons {
+  margin-bottom: 3rem;
+}
+
+.card-img img {
+  width: 130px;
+  border-radius: 50%;
+}
+.view-all-project {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.box-wraper {
+  padding-top: 3rem;
+}
+.box {
+  background-color: #fff;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-allright {
+  padding: 50px;
+}
+.h4 {
+  width: 80%;
+  color: #fff;
+}
+.input-box {
+  margin-top: 3rem;
+}
+.input-box input {
+  border: none;
+  width: 300px;
+  padding: 15px;
+  border-radius: 0 !important;
+}
+.ul-list {
+  margin-top: 3rem;
+}
+.ul-list ul {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0;
+  padding-left: 0;
+}
+li {
+  color: #fff;
+  font-size: 16px;
+  list-style: none;
+}
+footer {
+  background-color: #fe6054;
+  border-top: 1px solid #fff;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Alll project pages */
+
+.all {
+  padding: 30px 10px;
+}
+.card-num {
+  background-color: #fe6054;
+  padding: 30px;
+}
+.card-background {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.image img {
+  width: 100px;
+  border-radius: 50%;
+}
+.paragraph-card {
+  display: flex;
+  align-items: center;
+}
+.card-btn {
+  display: flex;
+  align-items: center;
+}
+.details {
+  padding: 50px 20px;
+}
+.all-btn {
+  margin: 20px 0;
+}
+.all-btn button {
+  background-color: #fff;
+  outline: none;
+  border-left: none;
+  padding: 2px 15px;
+  font-size: 20px;
+  color: #5458cf;
+  font-weight: 600;
+  border-top: none;
+  border-bottom: none;
+  border-right: 1px solid #000000;
+}
+.bornone {
+  border: none !important;
+  color: #373a3c !important;
+}
+.link-all{
+  color: #504e4eac;
+  text-decoration: none;
+}
+.link-all:hover{
+color: #fe6054;}
+.link-all:focus{
+  color: #fe6054;}
+.paracard{
+  display: flex;
+}
+.paracard p{
+  margin: 0 10px;
+}
+.dimg img{
+  width: 110px;
+  border-radius: 50%;
+}
+.card-details{
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+padding: 10px;
+}
+.card-detain-margin{
+  padding: 20px;
+}
+
+
+
+/* media query $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media only screen and (max-width: 891px) {
+ .h5{
+  width: 80%;
+ }
+ input{
+  padding: 10px;
+  height: 50px;
+ }
+ .secondary{
+padding:0 5px ;
+}
+.upcoming{
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.allpro{
+  display: flex;
+  justify-content: center;
+
+}
+.input-box input{
+  margin-bottom: 10px;
+}
+.danger{
+  width: 240px;
+}
 }
